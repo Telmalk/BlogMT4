@@ -2,12 +2,12 @@ version: "3.1"
 
 services:
   database:
-    image: mariadb:latest
+    image: mysql:5.7.4
     environment:
-      MYSQL_ROOT_PASSWORD: mabite
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: blog
       MYSQL_USER: adm
-      MYSQL_PASSWORD: mabite
+      MYSQL_PASSWORD: root
     ports:
       - 3306:3306
     volumes:
@@ -20,4 +20,4 @@ services:
     environment:
       PMA_HOST: database
       PMA_USER: root
-      PMA_PASSWORD: mabite
+      PMA_PASSWORD: root
