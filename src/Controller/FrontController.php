@@ -18,6 +18,8 @@ class FrontController
                 break;
             case "user.add":
                 break;
+            case "user.login":
+                break;
             case "user.update":
                 break;
             case "comment.add":
