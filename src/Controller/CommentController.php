@@ -23,6 +23,6 @@ class CommentController
 
     public function deleteComment()
     {
-        
+
     }
 }
