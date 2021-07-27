@@ -5,7 +5,8 @@
             "Controller\\": "src/Controller",
             "View\\": "src/View",
             "Model\\": "src/Model",
-            "Helper\\": "src/Helper"
+            "Helper\\": "src/Helper",
+            "Manager\\": "src/Manager"
         }
     },
     "authors": [
