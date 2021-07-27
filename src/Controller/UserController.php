@@ -26,7 +26,6 @@ class UserController
                 throw new \HttpRequestException("Les mots de passe ne correspondent pas");
             }
             $model = UserFactory::getModel();
-            var_dump($_POST["user"]);
             $model->setPseudo($data["pseudo"]);
             $model->setPassword($data("password"));
             exit;
