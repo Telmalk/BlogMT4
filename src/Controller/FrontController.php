@@ -10,6 +10,7 @@ class FrontController
         $action = $_POST["action"] ?? $_GET["action"] ?? '';
         switch ($action) {
             case "article.show":
+                echo "HAAAAAAAAAAAAAAa";
                 break;
             case "article.delete":
                 break;
