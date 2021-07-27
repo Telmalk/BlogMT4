@@ -35,4 +35,11 @@ class UserController
         }
     }
 
+    public function login() {
+        if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_POST['login'])) {
+            echo "Login";
+        } else {
+            $this->userView->formLogin();
+        }
+    }
 }

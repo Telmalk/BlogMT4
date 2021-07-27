@@ -19,10 +19,12 @@ class FrontController
             case "article.add":
                 break;
             case "user.add":
-                $userControler = UserFactory::getController();
-                $userControler->add();
+                $userController = UserFactory::getController();
+                $userController->add();
                 break;
             case "user.login":
+                $userController = UserFactory::getController();
+                $userController->login();
                 break;
             case "user.update":
                 break;
