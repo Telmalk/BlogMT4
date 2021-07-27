@@ -6,6 +6,7 @@ namespace Factory;
 
 use Controller\UserController;
 use Manager\UserManager;
+use Model\UserModel;
 use View\UserView;
 
 class UserFactory
@@ -15,7 +16,7 @@ class UserFactory
     }
 
     public static function getModel() {
-        // return new
+         return new UserModel();
     }
 
     public static function getView() {
