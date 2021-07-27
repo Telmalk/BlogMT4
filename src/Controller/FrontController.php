@@ -22,8 +22,10 @@ class FrontController
             case "comment.add":
                 break;
             case "article.index":
+                echo "Coucou";
                 break;
             default:
+                echo "Coucou";
         }
     }
 }
