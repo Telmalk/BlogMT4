@@ -4,21 +4,28 @@
 namespace Controller;
 
 
+use Factory\UserFactory;
+use Manager\UserManager;
+use View\UserView;
+
 class UserController
 {
-    private $userView;
-    private $userModel;
+    private UserView $userView;
+    private UserManager $userManager;
 
     public function __construct()
     {
-
+        $this->userManager = UserFactory::getManager();
+        $this->userView = UserFactory::getView();
     }
 
     public function add() {
-        if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_POST['page'])) {
-            $data = $_POST['page'];
-            header("Location: ".\KANDT_ROOT_URI);
+        if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_POST['user'])) {
+
+            var_dump($_POST["user"]);
             exit;
+        } else {
+             $this->userView->formAdd();
         }
     }
 

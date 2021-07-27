@@ -2,6 +2,8 @@
 
 namespace Controller;
 
+use Factory\UserFactory;
+
 class FrontController
 {
     public function __construct()
@@ -17,6 +19,8 @@ class FrontController
             case "article.add":
                 break;
             case "user.add":
+                $userControler = UserFactory::getController();
+                $userControler->add();
                 break;
             case "user.login":
                 break;
