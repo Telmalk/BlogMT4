@@ -76,4 +76,5 @@ class ArticleModel
     {
         $this->id = $id;
     }
+
 }
