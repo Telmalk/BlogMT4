@@ -27,7 +27,8 @@ class UserController
             }
             $model = UserFactory::getModel();
             $model->setPseudo($data["pseudo"]);
-            $model->setPassword($data("password"));
+            $model->setPassword($data["password"]);
+            $this->userManager->addUser($model);
             exit;
         } else {
              $this->userView->formAdd();
